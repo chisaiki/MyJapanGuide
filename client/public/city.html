@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>City Details</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body>
+		<header></header>
+		<main id="city-detail"></main>
+		<script src="/scripts/header.js"></script>
+		<script>
+           
+			// Get city name from URL
+			const cityName = window.location.pathname.split('/').pop();
+			async function fetchCityDetail() {
+				const response = await fetch('/cities');
+				const cities = await response.json();
+				const city = cities.find(c => c.name.toLowerCase() === cityName.toLowerCase());
+				const container = document.getElementById('city-detail');
+				if (city) {
+					container.innerHTML = `
+						<article class="card">
+							<img src="${city.image}" alt="${city.name}">
+							<h1>${city.name}</h1>
+							<p>${city.description}</p>
+							${city.hotel ? `<h3>Hotel: ${city.hotel}</h3>` : ''}
+							${city.hotellocation ? `<p>Location: ${city.hotellocation}</p>` : ''}
+							${city.hotelimage ? `<img src="${city.hotelimage}" alt="Hotel Image" style="width:100px;">` : ''}
+						</article>
+					`;
+				} else {
+					container.innerHTML = '<h2>City not found 😞</h2>';
+				}
+			}
+			fetchCityDetail();
+		</script>
+	</body>
+</html>
