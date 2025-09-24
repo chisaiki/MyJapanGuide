@@ -99,19 +99,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 300px;
-    max-width: 320px;
-    width: 100%;
+    width: 400px;
+    height: 800px;
+    min-height: 800px;
+    max-width: 400px;
     margin: 0 auto;
+    position: relative;
+    flex: none;
 }
 .card img {
     display: block;
     width: 100%;
-    max-width: 320px;
-    height: auto;
-    min-height: 100px;
-    object-fit: contain;
-    border-radius: 0.5rem;
+    height: 50%;
+    max-height: 200px; /* half of 400px card height */
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 

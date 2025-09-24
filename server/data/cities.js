@@ -5,8 +5,8 @@ const cities = [
     description: "A city known for its peace memorial and easily the most calm and serene city I've visited; with a perfect blend of nature and modern architecture.",
     hotel:"The Knot",
     hotellocation: "Hiroshima City",
-    hotelimage: "data/hotelimages/theknot.png",
-    image: "data/cityimages/hiroshima.jpg"
+    hotelimage: "/hotelimages/theknot.png",
+    image: "/cityimages/hiroshima.jpg"
   },
   {
     name: "Kanazawa",
@@ -14,8 +14,8 @@ const cities = [
     description: "The local have kindness like no other, such welcoming attitude filled with excitement and curiosity.",
     hotel:"Apa Hotel Kanazawa Nomachi",
     hotellocation: "Ishikawa",
-    hotelimage: "data/hotelimages/apa.png",
-    image: "data/cityimages/kanazawa.jpg"
+    hotelimage: "/hotelimages/apa.png",
+    image: "/cityimages/kanazawa.jpg"
   },
   {
     name: "Tokyo",
@@ -23,8 +23,8 @@ const cities = [
     description: "The bustling capital of Japan, but its the corner alleys you want to explore the most. Ranging from strange to absurd themed foods and entertainment.",
     hotel:"スパーホテル (Super Hotel)",
     hotellocation: "Ueno",
-    hotelimage: "data/hotelimages/supahotel.png",
-    image: "data/cityimages/tokyo.jpg"
+    hotelimage: "/hotelimages/supahotel.png",
+    image: "/cityimages/tokyo.jpg"
   },
   {
     name: "Kyoto",    
@@ -32,8 +32,8 @@ const cities = [
     description: "Famous for its temples and gardens but stay for the flea market filled with old relics of Japan and the vendors waiting to discuss the history.",
     hotel:"Fujitaya BnB",
     hotellocation: "Shimogyo Ward",
-    hotelimage: "data/hotelimages/fujitaya.png",
-    image: "./data/cityimages/kyoto.jpg"
+    hotelimage: "/hotelimages/fujitaya.png",
+    image: "/cityimages/kyoto.jpg"
   },
   {
     name: "Nara",
@@ -41,8 +41,8 @@ const cities = [
     description: "Often known for their bowing deers, but also have the kindest souls who want to perserve their city and its history.",
     hotel:"Centurion Hotel Classic Nara",
     hotellocation: "Nara",
-    hotelimage: "data/hotelimages/centurion.png",
-    image: "data/cityimages/nara.jpg"
+    hotelimage: "/hotelimages/centurion.png",
+    image: "/cityimages/nara.jpg"
   }
 ];
 

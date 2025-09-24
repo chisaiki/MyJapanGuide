@@ -7,8 +7,15 @@ export default defineConfig({
   },
   server: {
     proxy: {
+
       '/cities': {
-        target: 'http://localhost:3001'
+        target: 'http://localhost:3001/'
+      },
+      '/cityimages':{
+        target: 'http://localhost:3001/'
+      },
+      '/hotelimages':{
+        target: 'http://localhost:3001/'
       }
     }
   }

@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-https://imgur.com/a/mwpts3b
+https://imgur.com/a/mNoCNv0
 GIF created with ScreenToGif
 
 
