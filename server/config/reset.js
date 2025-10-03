@@ -9,9 +9,9 @@ const createCitiesTable = async () => {
         CREATE TABLE IF NOT EXISTS cities (
             id SERIAL PRIMARY KEY,
             name VARCHAR(255) NOT NULL,
-            imageCity VARCHAR(255) NOT NULL,
+            imageCity TEXT NOT NULL,
             description TEXT NOT NULL,
-            imageHotel VARCHAR(255) NOT NULL,
+            imageHotel TEXT NOT NULL,
             hotelLocation VARCHAR(255) NOT NULL,
             hotelName VARCHAR(255) NOT NULL
         )
@@ -54,3 +54,6 @@ const seedCitiesTable = async () => {
 }
 
 seedCitiesTable();
+
+/* I HAD TO USE THE SAME DB FOR THE ONE I MADE IN THE LAB BECAUSE 
+RENDER HAS A ONE TABLE LIMIT */
