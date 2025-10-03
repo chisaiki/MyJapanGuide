@@ -1,4 +1,5 @@
 import express from 'express'
+// import dotenv from './config/dotenv.js'
 import { fileURLToPath } from 'url';
 import path from 'path';
 import citiesRouter from './routes/cities.js'
