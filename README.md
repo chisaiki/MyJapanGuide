@@ -1,10 +1,10 @@
-# WEB103 Project 2 - *Name of App Here*
+# WEB103 Project 2 - *MY JAPAN GUIDE*
 
-Submitted by: **Your name here**
+Submitted by: **Syeda Rahman**
 
-About this web app: **App description here**
+About this web app: **Trip guide from my personal trip to Japan**
 
-Time spent: **X** hours
+Time spent: **3** hours
 
 ## Required Features
 
